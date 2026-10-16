@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Owner Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="adm-app">
+        <aside class="nav" id="nav"></aside>
+        <main class="main">
+            <div class="top"><button class="btn ghost sm mob" id="navBtn">☰</button>
+                <h2 id="title"></h2>
+                <div class="grow"></div><a class="btn ghost sm" href="index.html">Open chatbot</a>
+            </div>
+            <div class="banner">Frontend demo: payment verification is simulated. Always check a real transaction in
+                production. LocalStorage is not secure and this page is not access-protected.</div>
+            <div id="view"></div>
+        </main>
+    </div>
+    <div id="toasts"></div>
+    <script src="storage.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>

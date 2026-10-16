@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Premium Store Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-app">
+        <aside id="side" class="side">
+            <div class="side-h"><b>Chats</b><button class="btn sm" id="newBtn">+ New chat</button></div>
+            <div id="hist"></div><a class="adm" href="admin.html">Owner dashboard</a>
+        </aside>
+        <main class="chat">
+            <header class="chat-h"><button class="btn ghost sm mob" id="menuBtn">☰</button>
+                <div class="logo">PS</div>
+                <div><b>Premium Store</b>
+                    <div class="sub"><span class="dot"></span>Online · <span id="who" class="badge">AI Assistant</span>
+                    </div>
+                </div>
+                <div class="grow"></div><input id="search" placeholder="Search chat" class="inp sm"><button
+                    class="btn ghost sm" id="prev">↑</button><button class="btn ghost sm" id="next">↓</button><button
+                    class="btn ghost sm" id="ordersBtn">My orders</button>
+            </header>
+            <div id="msgs" class="msgs"></div>
+            <div id="panel" class="panel"></div>
+            <footer class="chat-f"><input id="inp" class="inp" placeholder="Type a message…"><button class="btn"
+                    id="send">Send</button></footer>
+            <div class="note">Demo only: AI replies are simulated from the knowledge base. No real AI, payment check or
+                delivery.</div>
+        </main>
+    </div>
+    <div id="toasts"></div>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
